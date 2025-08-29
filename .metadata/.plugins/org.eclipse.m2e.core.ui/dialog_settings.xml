@@ -92,6 +92,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="E:\achu\SpringTools1\MY_WORK\Movies"/>
 			<item value="D:\practiceproject\LibraryManagement\BACKEND\LibraryBackend"/>
 			<item value="E:\achu\GIT-PROJECT BE\fixmyride_be"/>
 			<item value="E:\achu\SpringTools1\MY_WORK\SpringTools_postman"/>
