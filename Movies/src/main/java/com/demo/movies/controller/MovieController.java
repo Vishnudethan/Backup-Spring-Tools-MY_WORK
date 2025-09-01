@@ -9,6 +9,7 @@ import com.demo.movies.service.MovieService;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "*") 
 @RequestMapping("/api/movies")
 public class MovieController {
 
