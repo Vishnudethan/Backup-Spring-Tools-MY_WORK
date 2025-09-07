@@ -20,10 +20,27 @@ public class MovieController {
     }
 
     // Create
+//    @PostMapping
+//    public Movie addMovie(@RequestBody Movie movie) {
+//        return movieService.addMovie(movie);
+//    }
+//    @PostMapping
+//    public ResponseEntity<Map<String, Object>> addMovie(@RequestBody Movie movie) {
+//        Movie savedMovie = movieService.addMovie(movie); // Save the movie
+//
+//        Map<String, Object> response = new HashMap<>();
+//        response.put("message", "Movie added successfully");
+//        response.put("movie", savedMovie);
+//
+//        return ResponseEntity.ok(response); // 200 OK + JSON response
+//    }
+
     @PostMapping
-    public Movie addMovie(@RequestBody Movie movie) {
-        return movieService.addMovie(movie);
+    public ResponseEntity<String> addMovie(@RequestBody Movie movie) {
+        movieService.addMovie(movie);  // save the movie
+        return ResponseEntity.ok("Movie added successfully");
     }
+
 
     // Read All
     @GetMapping
